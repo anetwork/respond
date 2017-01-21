@@ -179,6 +179,11 @@ return [
 		'type' => 'error'
 	],
 
+    5446 => [
+        'message' => 'Oops... Redis connection refused',
+        'type' => 'error'
+    ],
+
 	5448 => [
 		'message' => 'Oops... Insert action was not successfully executed',
 		'type' => 'error'

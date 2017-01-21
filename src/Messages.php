@@ -155,6 +155,20 @@ class Messages extends Main
 
 	}
 
+    /**
+     * Redis connection is refused
+     *
+     * @author Alireza Josheghani <a.josheghani@anetwork.ir>
+     * @since 21 Jan 2017
+     */
+    public function redisConnectionRefused()
+    {
+        return $this->setStatusCode( 445 )
+            ->setStatusText( 'fail' )
+            ->setErrorCode( 5445 )
+            ->respondWithMessage();
+	}
+
 	/**
 	 * page requested is not found
 	 * @author Shima Payro <sh.payro@anetwork.ir>
